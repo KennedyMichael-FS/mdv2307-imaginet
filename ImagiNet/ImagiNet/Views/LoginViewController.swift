@@ -1,23 +1,36 @@
 import UIKit
+import Firebase
+import FirebaseAuth
+
 
 class LoginViewController: UIViewController, UITextFieldDelegate {
     
     public static var myCard: BusinessCard?
     public static var extraCard: BusinessCard!
+    public static var myUid: String!
 
     @IBOutlet weak var emailField: UITextField!
     @IBOutlet weak var passwordField: UITextField!
 
     @IBAction func loginButton(_ sender: Any) {
-        guard let email = emailField.text, let password = passwordField.text else {
+        guard let email = emailField.text, !email.isEmpty,
+              let password = passwordField.text, !password.isEmpty else {
+            // MARK: Need to set up an incorrect login data alert.
             return
         }
         
-        if loginSuccessful(email: email, password: password) {
-            showMainScreen()
-        } else {
-            // Handle unsuccessful login (e.g., display an error message)
-            print("Invalid credentials")
+        Auth.auth().signIn(withEmail: email, password: password) { [weak self] authResult, error in
+            guard self != nil else { return }
+            if let error = error {
+                // Handle login error (e.g., show an alert)
+                print("Login error: \(error.localizedDescription)")
+                return
+            }
+            
+            // Login successful, navigate to the rest of the app.
+            print("Login successful")
+            LoginViewController.myUid = Auth.auth().currentUser?.uid
+            self!.showMainScreen()
         }
     }
     
@@ -34,8 +47,8 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
     
     func showMainScreen() {
         
-        LoginViewController.myCard? = BusinessCard(first: "John", last: "Appleseed")
-        LoginViewController.extraCard = BusinessCard(first: "Jane", last: "Applelover", company: "Apple, Inc", jobtitle: "Example Coordinator", about: "A short little description of a person, which they've wrote for you to see.", website: nil, photo: nil)
+        LoginViewController.myCard? = BusinessCard(first: "John", last: "Appleseed", jtitle: "Example User")
+        LoginViewController.extraCard = BusinessCard(first: "Jane", last: "Applelover", company: "Apple, Inc", jobtitle: "Example Coordinator", about: "A short little description of a person, which they've wrote for you to see.")
         
         let storyboard = UIStoryboard(name: "Main", bundle: nil) // Replace "Main" with your storyboard name if different
         

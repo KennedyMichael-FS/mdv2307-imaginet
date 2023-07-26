@@ -14,6 +14,12 @@
 		8FCE21532A64A894009E51FB /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FCE21522A64A894009E51FB /* SettingsViewController.swift */; };
 		8FCE21552A64A8C2009E51FB /* AddCardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FCE21542A64A8C2009E51FB /* AddCardViewController.swift */; };
 		8FCE21572A64A8DB009E51FB /* MyCardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FCE21562A64A8DB009E51FB /* MyCardViewController.swift */; };
+		8FCE21592A6BD440009E51FB /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8FCE21582A6BD43F009E51FB /* GoogleService-Info.plist */; };
+		8FCE215C2A6BD6C6009E51FB /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 8FCE215B2A6BD6C6009E51FB /* FirebaseAuth */; };
+		8FCE215E2A6BD6C6009E51FB /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = 8FCE215D2A6BD6C6009E51FB /* FirebaseDatabase */; };
+		8FCE21602A6BD6C6009E51FB /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 8FCE215F2A6BD6C6009E51FB /* FirebaseFirestore */; };
+		8FCE21622A6BD6C6009E51FB /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 8FCE21612A6BD6C6009E51FB /* FirebaseStorage */; };
+		8FCE21662A6FBA91009E51FB /* CardViewer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FCE21652A6FBA91009E51FB /* CardViewer.swift */; };
 		8FDAA2DE2A5F05AB00970E16 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FDAA2DD2A5F05AB00970E16 /* AppDelegate.swift */; };
 		8FDAA2E02A5F05AB00970E16 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FDAA2DF2A5F05AB00970E16 /* SceneDelegate.swift */; };
 		8FDAA2E52A5F05AB00970E16 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8FDAA2E32A5F05AB00970E16 /* Main.storyboard */; };
@@ -31,6 +37,8 @@
 		8FCE21522A64A894009E51FB /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		8FCE21542A64A8C2009E51FB /* AddCardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddCardViewController.swift; sourceTree = "<group>"; };
 		8FCE21562A64A8DB009E51FB /* MyCardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCardViewController.swift; sourceTree = "<group>"; };
+		8FCE21582A6BD43F009E51FB /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		8FCE21652A6FBA91009E51FB /* CardViewer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardViewer.swift; sourceTree = "<group>"; };
 		8FDAA2DA2A5F05AB00970E16 /* ImagiNet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ImagiNet.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8FDAA2DD2A5F05AB00970E16 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8FDAA2DF2A5F05AB00970E16 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -47,6 +55,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8FCE215E2A6BD6C6009E51FB /* FirebaseDatabase in Frameworks */,
+				8FCE21622A6BD6C6009E51FB /* FirebaseStorage in Frameworks */,
+				8FCE215C2A6BD6C6009E51FB /* FirebaseAuth in Frameworks */,
+				8FCE21602A6BD6C6009E51FB /* FirebaseFirestore in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -62,6 +74,7 @@
 				8FCE21522A64A894009E51FB /* SettingsViewController.swift */,
 				8FCE21542A64A8C2009E51FB /* AddCardViewController.swift */,
 				8FCE21562A64A8DB009E51FB /* MyCardViewController.swift */,
+				8FCE21652A6FBA91009E51FB /* CardViewer.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -95,6 +108,7 @@
 				8FDAA2EE2A5F05AE00970E16 /* Info.plist */,
 				8FDAA2E62A5F05AB00970E16 /* ImagiNet.xcdatamodeld */,
 				8F8834A22A63B756000A8EBA /* gungsuh.ttc */,
+				8FCE21582A6BD43F009E51FB /* GoogleService-Info.plist */,
 			);
 			path = ImagiNet;
 			sourceTree = "<group>";
@@ -123,6 +137,12 @@
 			dependencies = (
 			);
 			name = ImagiNet;
+			packageProductDependencies = (
+				8FCE215B2A6BD6C6009E51FB /* FirebaseAuth */,
+				8FCE215D2A6BD6C6009E51FB /* FirebaseDatabase */,
+				8FCE215F2A6BD6C6009E51FB /* FirebaseFirestore */,
+				8FCE21612A6BD6C6009E51FB /* FirebaseStorage */,
+			);
 			productName = ImagiNet;
 			productReference = 8FDAA2DA2A5F05AB00970E16 /* ImagiNet.app */;
 			productType = "com.apple.product-type.application";
@@ -151,6 +171,9 @@
 				Base,
 			);
 			mainGroup = 8FDAA2D12A5F05AB00970E16;
+			packageReferences = (
+				8FCE215A2A6BD6C6009E51FB /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			productRefGroup = 8FDAA2DB2A5F05AB00970E16 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -167,6 +190,7 @@
 			files = (
 				8FDAA2ED2A5F05AE00970E16 /* LaunchScreen.storyboard in Resources */,
 				8F8834A32A63B757000A8EBA /* gungsuh.ttc in Resources */,
+				8FCE21592A6BD440009E51FB /* GoogleService-Info.plist in Resources */,
 				8FDAA2EA2A5F05AE00970E16 /* Assets.xcassets in Resources */,
 				8FDAA2E52A5F05AB00970E16 /* Main.storyboard in Resources */,
 			);
@@ -186,6 +210,7 @@
 				8FCE214B2A64999E009E51FB /* ConnectionViewController.swift in Sources */,
 				8FDAA2F62A5F064B00970E16 /* BusinessCard.swift in Sources */,
 				8FDAA2E02A5F05AB00970E16 /* SceneDelegate.swift in Sources */,
+				8FCE21662A6FBA91009E51FB /* CardViewer.swift in Sources */,
 				8FDAA2E82A5F05AB00970E16 /* ImagiNet.xcdatamodeld in Sources */,
 				8FCE21532A64A894009E51FB /* SettingsViewController.swift in Sources */,
 				8FCE21552A64A8C2009E51FB /* AddCardViewController.swift in Sources */,
@@ -410,6 +435,40 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		8FCE215A2A6BD6C6009E51FB /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 10.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		8FCE215B2A6BD6C6009E51FB /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8FCE215A2A6BD6C6009E51FB /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		8FCE215D2A6BD6C6009E51FB /* FirebaseDatabase */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8FCE215A2A6BD6C6009E51FB /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseDatabase;
+		};
+		8FCE215F2A6BD6C6009E51FB /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8FCE215A2A6BD6C6009E51FB /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+		8FCE21612A6BD6C6009E51FB /* FirebaseStorage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8FCE215A2A6BD6C6009E51FB /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseStorage;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		8FDAA2E62A5F05AB00970E16 /* ImagiNet.xcdatamodeld */ = {
