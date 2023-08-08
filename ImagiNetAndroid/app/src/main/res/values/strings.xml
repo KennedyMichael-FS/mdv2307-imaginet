@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">ImagiNet Android</string>
+    <string name="welcome_login">Welcome. Please log in.</string>
+    <string name="welcome_signup">Welcome. Let\'s get started.</string>
+    <string name="email">E-Mail Address</string>
+    <string name="password">Password</string>
+    <string name="reenter_password">Re-enter Password</string>
+    <string name="login">Log In</string>
+    <string name="signup">Sign Up</string>
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="title_activity_view">ViewActivity</string>
+    <string name="title_connections">Connections</string>
+    <string name="title_messages">Messages</string>
+    <string name="title_mycard">My Card</string>
+    <string name="title_addcard">Add Card</string>
+    <string name="title_settings">Settings</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

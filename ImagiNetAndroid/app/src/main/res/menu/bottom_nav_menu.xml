@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_connections"
+        android:enabled="false"
+        android:icon="@android:drawable/ic_menu_myplaces"
+        android:title="@string/title_connections" />
+
+    <item
+        android:id="@+id/navigation_messages"
+        android:enabled="false"
+        android:icon="@android:drawable/ic_dialog_email"
+        android:title="@string/title_messages" />
+
+    <item
+        android:id="@+id/navigation_mycard"
+        android:enabled="false"
+        android:icon="@android:drawable/ic_menu_my_calendar"
+        android:title="@string/title_mycard" />
+    <item
+        android:id="@+id/navigation_addcard"
+        android:icon="@android:drawable/ic_menu_add"
+        android:title="@string/title_addcard" />
+    <item
+        android:id="@+id/navigation_settings"
+        android:enabled="false"
+        android:icon="@android:drawable/ic_menu_manage"
+        android:title="@string/title_settings" />
+
+</menu>
