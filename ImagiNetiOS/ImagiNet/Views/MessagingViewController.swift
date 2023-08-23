@@ -61,7 +61,7 @@ public class MessagingViewController: UIViewController, UITableViewDelegate, UIT
         let titleLabel = UILabel()
         titleLabel.numberOfLines = 0
         titleLabel.translatesAutoresizingMaskIntoConstraints = false
-        titleLabel.text = "\(String(describing: card!.firstname)) \(String(describing: card!.lastname))"
+        titleLabel.text? = "\(String(describing: card?.firstname)) \(String(describing: card?.lastname))"
         cell.contentView.addSubview(titleLabel)
         
         let messageLabel = UILabel()

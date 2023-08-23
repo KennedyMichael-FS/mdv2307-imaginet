@@ -47,8 +47,9 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
     
     func showMainScreen() {
         
-        LoginViewController.myCard? = BusinessCard(first: "John", last: "Appleseed", jtitle: "Example User")
-        LoginViewController.extraCard = BusinessCard(first: "Jane", last: "Applelover", company: "Apple, Inc", jobtitle: "Example Coordinator", about: "A short little description of a person, which they've wrote for you to see.")
+        // MARK: Example cards if needed.
+//        LoginViewController.myCard? = BusinessCard(first: "John", last: "Appleseed", jtitle: "Example User")
+//        LoginViewController.extraCard = BusinessCard(first: "Jane", last: "Applelover", company: "Apple, Inc", jobtitle: "Example Coordinator", about: "A short little description of a person, which they've wrote for you to see.")
         
         let storyboard = UIStoryboard(name: "Main", bundle: nil) // Replace "Main" with your storyboard name if different
         

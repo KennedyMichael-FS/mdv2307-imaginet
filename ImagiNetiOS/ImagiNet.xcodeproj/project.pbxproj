@@ -9,13 +9,14 @@
 /* Begin PBXBuildFile section */
 		8F8834A32A63B757000A8EBA /* gungsuh.ttc in Resources */ = {isa = PBXBuildFile; fileRef = 8F8834A22A63B756000A8EBA /* gungsuh.ttc */; };
 		8F9C7A062A80FD48006B1B18 /* NFCViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F9C7A052A80FD48006B1B18 /* NFCViewController.swift */; };
+		8FA217082A8776CF00D4C1D8 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8FA217072A8776CF00D4C1D8 /* GoogleService-Info.plist */; };
+		8FA2170B2A877CF400D4C1D8 /* CoreNFC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8FA2170A2A877CF400D4C1D8 /* CoreNFC.framework */; settings = {ATTRIBUTES = (Required, ); }; };
 		8FCE214B2A64999E009E51FB /* ConnectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FCE214A2A64999E009E51FB /* ConnectionViewController.swift */; };
 		8FCE214F2A649E46009E51FB /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FCE214E2A649E46009E51FB /* LoginViewController.swift */; };
 		8FCE21512A64A85F009E51FB /* MessagingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FCE21502A64A85F009E51FB /* MessagingViewController.swift */; };
 		8FCE21532A64A894009E51FB /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FCE21522A64A894009E51FB /* SettingsViewController.swift */; };
 		8FCE21552A64A8C2009E51FB /* AddCardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FCE21542A64A8C2009E51FB /* AddCardViewController.swift */; };
 		8FCE21572A64A8DB009E51FB /* MyCardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FCE21562A64A8DB009E51FB /* MyCardViewController.swift */; };
-		8FCE21592A6BD440009E51FB /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8FCE21582A6BD43F009E51FB /* GoogleService-Info.plist */; };
 		8FCE215C2A6BD6C6009E51FB /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 8FCE215B2A6BD6C6009E51FB /* FirebaseAuth */; };
 		8FCE215E2A6BD6C6009E51FB /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = 8FCE215D2A6BD6C6009E51FB /* FirebaseDatabase */; };
 		8FCE21602A6BD6C6009E51FB /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 8FCE215F2A6BD6C6009E51FB /* FirebaseFirestore */; };
@@ -34,13 +35,14 @@
 		8F8834A22A63B756000A8EBA /* gungsuh.ttc */ = {isa = PBXFileReference; lastKnownFileType = file; path = gungsuh.ttc; sourceTree = "<group>"; };
 		8F9C7A052A80FD48006B1B18 /* NFCViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NFCViewController.swift; sourceTree = "<group>"; };
 		8F9C7A072A82151F006B1B18 /* ImagiNet.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ImagiNet.entitlements; sourceTree = "<group>"; };
+		8FA217072A8776CF00D4C1D8 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		8FA2170A2A877CF400D4C1D8 /* CoreNFC.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreNFC.framework; path = System/Library/Frameworks/CoreNFC.framework; sourceTree = SDKROOT; };
 		8FCE214A2A64999E009E51FB /* ConnectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectionViewController.swift; sourceTree = "<group>"; };
 		8FCE214E2A649E46009E51FB /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		8FCE21502A64A85F009E51FB /* MessagingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagingViewController.swift; sourceTree = "<group>"; };
 		8FCE21522A64A894009E51FB /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		8FCE21542A64A8C2009E51FB /* AddCardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddCardViewController.swift; sourceTree = "<group>"; };
 		8FCE21562A64A8DB009E51FB /* MyCardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCardViewController.swift; sourceTree = "<group>"; };
-		8FCE21582A6BD43F009E51FB /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		8FCE21652A6FBA91009E51FB /* CardViewer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardViewer.swift; sourceTree = "<group>"; };
 		8FDAA2DA2A5F05AB00970E16 /* ImagiNet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ImagiNet.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8FDAA2DD2A5F05AB00970E16 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -58,6 +60,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8FA2170B2A877CF400D4C1D8 /* CoreNFC.framework in Frameworks */,
 				8FCE215E2A6BD6C6009E51FB /* FirebaseDatabase in Frameworks */,
 				8FCE21622A6BD6C6009E51FB /* FirebaseStorage in Frameworks */,
 				8FCE215C2A6BD6C6009E51FB /* FirebaseAuth in Frameworks */,
@@ -68,6 +71,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8FA217092A877CF300D4C1D8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8FA2170A2A877CF400D4C1D8 /* CoreNFC.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		8FCE214C2A6499BB009E51FB /* Views */ = {
 			isa = PBXGroup;
 			children = (
@@ -88,6 +99,7 @@
 			children = (
 				8FDAA2DC2A5F05AB00970E16 /* ImagiNet */,
 				8FDAA2DB2A5F05AB00970E16 /* Products */,
+				8FA217092A877CF300D4C1D8 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -108,12 +120,12 @@
 				8FDAA2DD2A5F05AB00970E16 /* AppDelegate.swift */,
 				8FDAA2DF2A5F05AB00970E16 /* SceneDelegate.swift */,
 				8FDAA2E32A5F05AB00970E16 /* Main.storyboard */,
+				8FA217072A8776CF00D4C1D8 /* GoogleService-Info.plist */,
 				8FDAA2E92A5F05AE00970E16 /* Assets.xcassets */,
 				8FDAA2EB2A5F05AE00970E16 /* LaunchScreen.storyboard */,
 				8FDAA2EE2A5F05AE00970E16 /* Info.plist */,
 				8FDAA2E62A5F05AB00970E16 /* ImagiNet.xcdatamodeld */,
 				8F8834A22A63B756000A8EBA /* gungsuh.ttc */,
-				8FCE21582A6BD43F009E51FB /* GoogleService-Info.plist */,
 			);
 			path = ImagiNet;
 			sourceTree = "<group>";
@@ -195,7 +207,7 @@
 			files = (
 				8FDAA2ED2A5F05AE00970E16 /* LaunchScreen.storyboard in Resources */,
 				8F8834A32A63B757000A8EBA /* gungsuh.ttc in Resources */,
-				8FCE21592A6BD440009E51FB /* GoogleService-Info.plist in Resources */,
+				8FA217082A8776CF00D4C1D8 /* GoogleService-Info.plist in Resources */,
 				8FDAA2EA2A5F05AE00970E16 /* Assets.xcassets in Resources */,
 				8FDAA2E52A5F05AB00970E16 /* Main.storyboard in Resources */,
 			);
@@ -368,7 +380,7 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = J69UZC78K3;
+				DEVELOPMENT_TEAM = FVTF8GK5B5;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = ImagiNet/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = ImagiNet;
@@ -378,12 +390,13 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UIStatusBarStyle = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.mskennedy.ImagiNet;
+				PRODUCT_BUNDLE_IDENTIFIER = com.bludger.ImagiNet;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -401,7 +414,7 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = J69UZC78K3;
+				DEVELOPMENT_TEAM = FVTF8GK5B5;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = ImagiNet/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = ImagiNet;
@@ -411,12 +424,13 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UIStatusBarStyle = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.mskennedy.ImagiNet;
+				PRODUCT_BUNDLE_IDENTIFIER = com.bludger.ImagiNet;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;

@@ -3,7 +3,20 @@
 <plist version="1.0">
 <dict>
 	<key>NFCReaderUsageDescription</key>
-	<string>The app scans digital business cards from other users.</string>
+	<string>Scanning in contact information</string>
+	<key>CFBundleURLTypes</key>
+	<array>
+		<dict>
+			<key>CFBundleTypeRole</key>
+			<string>Editor</string>
+			<key>CFBundleURLName</key>
+			<string>com.mskennedy.imaginet</string>
+			<key>CFBundleURLSchemes</key>
+			<array>
+				<string>imaginet</string>
+			</array>
+		</dict>
+	</array>
 	<key>UIAppFonts</key>
 	<array>
 		<string>gungsuh.ttc</string>
