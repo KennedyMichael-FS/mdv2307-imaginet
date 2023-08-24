@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8F2AE0E42A96FB3B00D9EE5A /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F2AE0E32A96FB3B00D9EE5A /* RegisterViewController.swift */; };
 		8F8834A32A63B757000A8EBA /* gungsuh.ttc in Resources */ = {isa = PBXBuildFile; fileRef = 8F8834A22A63B756000A8EBA /* gungsuh.ttc */; };
 		8F9C7A062A80FD48006B1B18 /* NFCViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F9C7A052A80FD48006B1B18 /* NFCViewController.swift */; };
 		8FA217082A8776CF00D4C1D8 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8FA217072A8776CF00D4C1D8 /* GoogleService-Info.plist */; };
@@ -32,6 +33,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8F2AE0E32A96FB3B00D9EE5A /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		8F8834A22A63B756000A8EBA /* gungsuh.ttc */ = {isa = PBXFileReference; lastKnownFileType = file; path = gungsuh.ttc; sourceTree = "<group>"; };
 		8F9C7A052A80FD48006B1B18 /* NFCViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NFCViewController.swift; sourceTree = "<group>"; };
 		8F9C7A072A82151F006B1B18 /* ImagiNet.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ImagiNet.entitlements; sourceTree = "<group>"; };
@@ -90,6 +92,7 @@
 				8FCE21562A64A8DB009E51FB /* MyCardViewController.swift */,
 				8FCE21652A6FBA91009E51FB /* CardViewer.swift */,
 				8F9C7A052A80FD48006B1B18 /* NFCViewController.swift */,
+				8F2AE0E32A96FB3B00D9EE5A /* RegisterViewController.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -230,6 +233,7 @@
 				8FCE21662A6FBA91009E51FB /* CardViewer.swift in Sources */,
 				8F9C7A062A80FD48006B1B18 /* NFCViewController.swift in Sources */,
 				8FDAA2E82A5F05AB00970E16 /* ImagiNet.xcdatamodeld in Sources */,
+				8F2AE0E42A96FB3B00D9EE5A /* RegisterViewController.swift in Sources */,
 				8FCE21532A64A894009E51FB /* SettingsViewController.swift in Sources */,
 				8FCE21552A64A8C2009E51FB /* AddCardViewController.swift in Sources */,
 			);

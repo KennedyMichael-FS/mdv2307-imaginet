@@ -5,13 +5,17 @@ import FirebaseAuth
 
 class LoginViewController: UIViewController, UITextFieldDelegate {
     
+    public static var deeplinkAction = ""
+    public static var deeplinkAccessory = ""
+    
     public static var myCard: BusinessCard?
     public static var extraCard: BusinessCard!
     public static var myUid: String!
 
     @IBOutlet weak var emailField: UITextField!
     @IBOutlet weak var passwordField: UITextField!
-
+    @IBOutlet weak var welcomeText: UILabel!
+    
     @IBAction func loginButton(_ sender: Any) {
         guard let email = emailField.text, !email.isEmpty,
               let password = passwordField.text, !password.isEmpty else {
@@ -40,16 +44,20 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
         passwordField.delegate = self
     }
     
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(true)
+        print(LoginViewController.deeplinkAction)
+        if (LoginViewController.deeplinkAction == "add") {
+            welcomeText.text = "Please log in to add this user."
+        }
+    }
+    
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         textField.resignFirstResponder()
         return true
     }
     
     func showMainScreen() {
-        
-        // MARK: Example cards if needed.
-//        LoginViewController.myCard? = BusinessCard(first: "John", last: "Appleseed", jtitle: "Example User")
-//        LoginViewController.extraCard = BusinessCard(first: "Jane", last: "Applelover", company: "Apple, Inc", jobtitle: "Example Coordinator", about: "A short little description of a person, which they've wrote for you to see.")
         
         let storyboard = UIStoryboard(name: "Main", bundle: nil) // Replace "Main" with your storyboard name if different
         

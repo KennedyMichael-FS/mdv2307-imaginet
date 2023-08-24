@@ -111,6 +111,7 @@
                     <connections>
                         <outlet property="emailField" destination="wnH-OU-iYE" id="jiB-wR-EL4"/>
                         <outlet property="passwordField" destination="AiQ-Fm-SBp" id="YbU-cd-gsW"/>
+                        <outlet property="welcomeText" destination="Un2-qI-ikj" id="p74-di-tmv"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -131,7 +132,7 @@
                                 <rect key="frame" x="0.0" y="50" width="393" height="44"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="10r-Mv-aU8" id="kZ1-5o-Bh5">
-                                    <rect key="frame" x="0.0" y="0.0" width="330.66666666666669" height="44"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="330.66666666666669" height="43.666667938232422"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                                 <edgeInsets key="layoutMargins" top="8" left="12" bottom="8" right="12"/>
@@ -642,7 +643,7 @@
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" textLabel="e25-D5-nbo" style="IBUITableViewCellStyleDefault" id="RHi-BG-OAM">
                                         <rect key="frame" x="0.0" y="55.333332061767578" width="393" height="43.666667938232422"/>
                                         <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="RHi-BG-OAM" id="rOw-7W-jHT">
+                                        <tableViewCellContentView key="contentView" hidden="YES" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="RHi-BG-OAM" id="rOw-7W-jHT">
                                             <rect key="frame" x="0.0" y="0.0" width="362.66666666666669" height="43.666667938232422"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
@@ -659,7 +660,7 @@
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" textLabel="bE2-y6-OqP" style="IBUITableViewCellStyleDefault" id="Eso-20-ybq">
                                         <rect key="frame" x="0.0" y="99" width="393" height="43.666667938232422"/>
                                         <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Eso-20-ybq" id="dCk-Z4-P0y">
+                                        <tableViewCellContentView key="contentView" hidden="YES" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Eso-20-ybq" id="dCk-Z4-P0y">
                                             <rect key="frame" x="0.0" y="0.0" width="362.66666666666669" height="43.666667938232422"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
@@ -704,7 +705,7 @@
                                             <rect key="frame" x="0.0" y="0.0" width="362.66666666666669" height="43.666667938232422"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Sounds" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="0jz-Wx-R5X">
+                                                <label hidden="YES" opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Sounds" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="0jz-Wx-R5X">
                                                     <rect key="frame" x="20" y="0.0" width="334.66666666666669" height="43.666667938232422"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" name="Gungsuh" family="Gungsuh" pointSize="14"/>
@@ -717,7 +718,7 @@
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" textLabel="kSU-Fs-gCt" style="IBUITableViewCellStyleDefault" id="gcI-I1-PMg">
                                         <rect key="frame" x="0.0" y="293.33333396911621" width="393" height="43.666667938232422"/>
                                         <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="gcI-I1-PMg" id="h6f-Wa-8zD">
+                                        <tableViewCellContentView key="contentView" hidden="YES" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="gcI-I1-PMg" id="h6f-Wa-8zD">
                                             <rect key="frame" x="0.0" y="0.0" width="362.66666666666669" height="43.666667938232422"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
@@ -734,7 +735,7 @@
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" textLabel="WCv-GF-dJc" style="IBUITableViewCellStyleDefault" id="5da-e2-5lk">
                                         <rect key="frame" x="0.0" y="337.00000190734863" width="393" height="43.666667938232422"/>
                                         <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="5da-e2-5lk" id="rNL-75-4YK">
+                                        <tableViewCellContentView key="contentView" hidden="YES" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="5da-e2-5lk" id="rNL-75-4YK">
                                             <rect key="frame" x="0.0" y="0.0" width="393" height="43.666667938232422"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
@@ -764,7 +765,7 @@
         <!--Account Register-->
         <scene sceneID="uvd-lD-bUa">
             <objects>
-                <viewController title="Account Register" id="STa-bB-bhN" customClass="ViewController" customModule="ImagiNet" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Account Register" id="STa-bB-bhN" customClass="RegisterViewController" customModule="ImagiNet" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="FtU-FD-dZu">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -826,6 +827,9 @@
                                 <buttonConfiguration key="configuration" style="filled" title="Register">
                                     <fontDescription key="titleFontDescription" name="Gungsuh" family="Gungsuh" pointSize="16"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="registerButtonTapped:" destination="STa-bB-bhN" eventType="touchUpInside" id="o7l-eI-7zc"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="ANX-xA-6GZ"/>
@@ -858,6 +862,11 @@
                             <constraint firstItem="74W-cY-Dbw" firstAttribute="top" secondItem="N49-Ho-rQX" secondAttribute="bottom" constant="8" symbolic="YES" id="txP-Jx-8lB"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="confirmPasswordTextField" destination="YQ2-QM-AOw" id="133-j9-8do"/>
+                        <outlet property="emailTextField" destination="N49-Ho-rQX" id="0rc-5D-7eZ"/>
+                        <outlet property="passwordTextField" destination="74W-cY-Dbw" id="LXJ-v6-WXM"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="43S-WT-9Qn" sceneMemberID="firstResponder"/>
             </objects>

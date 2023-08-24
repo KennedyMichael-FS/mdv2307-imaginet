@@ -55,7 +55,6 @@ class ConnectionsViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        // Assuming you have a segue with the identifier "showCardSegue"
         performSegue(withIdentifier: "showCardSegue", sender: indexPath.row)
     }
 

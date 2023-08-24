@@ -17,7 +17,29 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         FirebaseApp.configure()
+        
         return true
+    }
+    
+    func application(_ app: UIApplication, open url: URL, options: [UIApplication.OpenURLOptionsKey : Any] = [:]) -> Bool {
+        let components = URLComponents(url: url, resolvingAgainstBaseURL: true)
+        
+        if let path = components?.path {
+            let pathComponents = path.components(separatedBy: "/")
+            print(pathComponents)
+            
+            if pathComponents.count == 3, let action = pathComponents.first, let uid = pathComponents.last {
+                if action == "add" {
+                    print("Will add a connection upon login. Note: This quick-action will be disposed of if the app is closed before the next login.")
+                    LoginViewController.deeplinkAction = "add"
+                    LoginViewController.deeplinkAccessory = uid
+                }
+
+                return true
+            }
+        }
+        
+        return false
     }
 
     // MARK: UISceneSession Lifecycle
