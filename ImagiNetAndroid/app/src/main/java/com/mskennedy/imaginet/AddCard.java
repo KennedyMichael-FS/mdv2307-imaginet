@@ -1,17 +1,8 @@
 package com.mskennedy.imaginet;
 
-import android.content.Context;
 import android.content.Intent;
-import android.content.pm.PackageManager;
-import android.nfc.NfcAdapter;
-import android.nfc.NfcManager;
-import android.os.Build;
 import android.os.Bundle;
-
-import androidx.core.app.ActivityCompat;
 import androidx.fragment.app.Fragment;
-
-import android.provider.Settings;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -26,7 +17,7 @@ public class AddCard extends Fragment {
         // Required empty public constructor
     }
 
-    public static AddCard newInstance(String param1, String param2) {
+    public static AddCard newInstance() {
         return new AddCard();
     }
 
@@ -46,16 +37,11 @@ public class AddCard extends Fragment {
         // Find the TextView and Button by their IDs
         TextView textView = rootView.findViewById(R.id.currentUIDdisplay);
         textView.setText(uid);
-        ConnectionHostApduService.myUID = uid;
+        ConnectionHostApduService.NDEF_TEXT = uid;
         Button button = rootView.findViewById(R.id.sendNFCbutton);
 
         // Set an OnClickListener on the button
-        button.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                startNfcEmulation();
-            }
-        });
+        button.setOnClickListener(v -> startNfcEmulation());
         return rootView;
     }
 

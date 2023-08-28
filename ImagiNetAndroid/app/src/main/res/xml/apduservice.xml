@@ -1,4 +1,9 @@
-<?xml version="1.0" encoding="utf-8"?>
 <host-apdu-service xmlns:android="http://schemas.android.com/apk/res/android"
-    android:description="@string/title_addcard"
-    android:requireDeviceUnlock="false" />
+    android:description="@string/nfc_usage_desc"
+    android:requireDeviceUnlock="false">
+    <aid-group
+        android:category="android.intent.category.DEFAULT">
+        <aid-filter
+            android:name="F0394148000102"/>
+    </aid-group>
+</host-apdu-service>

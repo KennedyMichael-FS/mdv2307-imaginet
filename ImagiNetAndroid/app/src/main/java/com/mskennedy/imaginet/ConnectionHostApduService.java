@@ -1,47 +1,62 @@
 package com.mskennedy.imaginet;
 
+import android.nfc.NdefMessage;
+import android.nfc.NdefRecord;
 import android.nfc.cardemulation.HostApduService;
 import android.os.Bundle;
+import android.util.Log;
+
+import java.util.Arrays;
 
 public class ConnectionHostApduService extends HostApduService {
-    private static final String TAG = "MyHostApduService";
-    public static String myUID = ""; // The custom UID to be emulated
+
+    private static final String TAG = "NFC_Emulation_Service";
+    private static final byte[] RESPONSE_SUCCESS = {(byte) 0x90, (byte) 0x00};
+    private static final byte[] RESPONSE_ERROR = {(byte) 0x6A, (byte) 0x00};
+
+    public static String NDEF_TEXT = "";
+
+    private static final byte[] SELECT_APDU = {
+            (byte) 0x00, // CLA (Class)
+            (byte) 0xA4, // INS (Instruction)
+            (byte) 0x04, // P1 (Parameter 1)
+            (byte) 0x00, // P2 (Parameter 2)
+            (byte) 0x07, // Length of data
+            (byte) 0xF0, (byte) 0x39, (byte) 0x41, (byte) 0x48, (byte) 0x00, (byte) 0x01, (byte) 0x02 // AID (Application Identifier)
+    };
+
+    private NdefMessage createNdefMessage() {
+        Log.e("Printing value: ", NDEF_TEXT);
+        NdefRecord record = NdefRecord.createTextRecord("en", NDEF_TEXT);
+        return new NdefMessage(new NdefRecord[]{record});
+    }
 
     @Override
     public byte[] processCommandApdu(byte[] commandApdu, Bundle extras) {
-        // Check if the received APDU command matches the SELECT AID command (0x00A40400).
-        if (commandApdu.length >= 4 &&
-                commandApdu[0] == (byte) 0x00 &&
-                commandApdu[1] == (byte) 0xA4 &&
-                commandApdu[2] == (byte) 0x04 &&
-                commandApdu[3] == (byte) 0x00) {
-            // Respond with the custom UID in the response APDU.
-            return hexStringToByteArray(myUID);
-        } else {
-            // For any other APDU command, respond with an empty payload (status word 0x9000).
-            return new byte[]{(byte) 0x90, (byte) 0x00};
+        Log.d(TAG, "Received APDU command: " + byteArrayToHex(commandApdu));
+
+        if (Arrays.equals(commandApdu, SELECT_APDU)) {
+            NdefMessage ndefMessage = createNdefMessage();
+            byte[] ndefPayload = ndefMessage.toByteArray();
+            byte[] response = new byte[ndefPayload.length + 2];
+            System.arraycopy(ndefPayload, 0, response, 0, ndefPayload.length);
+            System.arraycopy(RESPONSE_SUCCESS, 0, response, ndefPayload.length, 2);
+            return response;
         }
+
+        return RESPONSE_ERROR;
     }
 
     @Override
     public void onDeactivated(int reason) {
-        // This method will be called when the NFC link is deactivated (e.g., the user moves the phone away from the reader).
-        // You can perform any cleanup operations here.
+        Log.d(TAG, "Deactivated: " + reason);
     }
 
-    // Helper method to convert a hex string to a byte array.
-    private byte[] hexStringToByteArray(String hexString) {
-        int len = hexString.length();
-        byte[] data = new byte[len / 2];
-        for (int i = 0; i < len; i += 2) {
-            data[i / 2] = (byte) ((Character.digit(hexString.charAt(i), 16) << 4)
-                    + Character.digit(hexString.charAt(i + 1), 16));
+    private String byteArrayToHex(byte[] byteArray) {
+        StringBuilder sb = new StringBuilder();
+        for (byte b : byteArray) {
+            sb.append(String.format("%02X", b));
         }
-        return data;
-    }
-
-    // Method to set the custom UID to be emulated.
-    public void setEmulatedUID(String uid) {
-        myUID = uid;
+        return sb.toString();
     }
 }
